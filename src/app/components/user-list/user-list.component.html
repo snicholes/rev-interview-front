@@ -1,0 +1,4 @@
+<select [(ngModel)]="currentUserId" (ngModelChange)="setUser()">
+    <option></option>
+    <option *ngFor="let user of users" [value]="user.id">{{user.firstName}} {{user.lastName}}</option>
+</select>
